@@ -20,4 +20,11 @@
     docker
   ];
 
+  # ssh with default key
+  services.openssh.enable = true;
+  users.users.root.openssh.authorizedKeys.keys = [''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILeQvOnwA1GuQs5M49dqJbgJsVvwngq/0oq75HK6947N'' ];
+
+  # state
+  system.stateVersion = "23.11";
+
 }
