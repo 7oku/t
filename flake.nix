@@ -3,7 +3,7 @@ inputs = {
 };
 
 outputs = {
-  nixosConfigurations."blackbox" = nixpkgs.lib.nixosSystem {
+  nixosConfigurations."fresh" = nixpkgs.lib.nixosSystem {
      system = "x86_64-linux";
      modules = [
        ./disko.nix
