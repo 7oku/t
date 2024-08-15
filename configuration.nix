@@ -16,6 +16,7 @@
 
   # packages
   environment.systemPackages = with pkgs; [
+    vim
     docker
   ];
 
