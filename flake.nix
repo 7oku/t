@@ -6,7 +6,6 @@ outputs = {
   nixosConfigurations."fresh" = nixpkgs.lib.nixosSystem {
      system = "x86_64-linux";
      modules = [
-       ./disko.nix
        ./configuration.nix
      ];
    };
