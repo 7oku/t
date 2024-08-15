@@ -8,6 +8,9 @@
     ./disk-config.nix
   ];
 
+  # enable flakes
+  nix.settings.experimental-features = [ "nix-command" "flakes"];
+
   # timezone
   time.timeZone = "Europe/Berlin";
 
